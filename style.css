@@ -4,6 +4,7 @@ div.btn {
     border: none; /* Remove borders */
     color: rgb(180, 173, 173); /* White text */
     padding: 12px 16px; /* Some padding */
+    width: 20%;
     font-size: 16px; /* Set a font size */
     cursor: pointer; /* Mouse pointer on hover */
   }
