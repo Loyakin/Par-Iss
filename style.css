@@ -18,9 +18,6 @@ div.btn a {
     text-decoration: none; /* No underlines on the link */
     color: white; /* White text */
     z-index: 10; /* Places the link above everything else in the div */
-    background-color: #FFF; /* Fix to make div clickable in IE */
-    opacity: 0; /* Fix to make div clickable in IE */
-    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
 }
   
   /* Darker background on mouse-over */
