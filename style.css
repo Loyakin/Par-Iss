@@ -1,8 +1,8 @@
 /* Style buttons */
 div.btn {
-    background-color: DodgerBlue; /* Blue background */
+    background-color: rgb(180, 173, 173); /* Blue background */
     border: none; /* Remove borders */
-    color: rgb(180, 173, 173); /* White text */
+    color: black; /* White text */
     padding: 12px 16px; /* Some padding */
     width: 20%;
     font-size: 16px; /* Set a font size */
@@ -25,5 +25,5 @@ div.btn a {
   
   /* Darker background on mouse-over */
   div.btn:hover {
-    background-color: RoyalBlue;
+    background-color: lightgrey;
   }
