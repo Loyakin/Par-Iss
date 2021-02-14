@@ -1,11 +1,13 @@
 /* Style buttons */
 div.btn {
-    background-color: rgba(112, 112, 255, 0.418); /* Blue background */
+    background-color: rgba(133, 153, 173, 0.562); /* Blue background */
     border: none; /* Remove borders */
     padding: 12px 16px; /* Some padding */
-    width: 10%;
+    width: 14%;
     padding: 20px 0;
     text-align: center;
+    font-family: "monospace", Times, serif;
+    display: inline-block;
     font-size: 30px; /* Set a font size */
     cursor: pointer; /* Mouse pointer on hover */
     position: relative;
@@ -18,11 +20,24 @@ div.btn a {
     top: 0;
     left: 0;
     text-decoration: none; /* No underlines on the link */
-    color: white; /* White text */
+    color: black; /* White text */
     z-index: 10; /* Places the link above everything else in the div */
 }
   
   /* Darker background on mouse-over */
   div.btn:hover {
-    background-color: lightskyblue;
+    background-color: rgba(140, 161, 184, 0.534);
+  }
+
+  div.logo{
+      background-color: lightslategray;
+      border: none;
+      padding: 20px 16px;
+      width: 100%;
+      text-align: center;
+      font-size: 50px;
+  }
+
+  div.header{
+    text-align: left;
   }
