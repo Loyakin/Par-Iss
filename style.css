@@ -27,6 +27,7 @@ div.btn a {
   /* Darker background on mouse-over */
   div.btn:hover {
     background-color: rgba(140, 161, 184, 0.534);
+    box-shadow: 0px 0px 2px 3px rgba(68, 80, 92, 0.534);
   }
 
   div.logo{
@@ -39,5 +40,6 @@ div.btn a {
   }
 
   div.header{
+    background-color: rgba(133, 153, 173, 0.562);
     text-align: left;
   }
