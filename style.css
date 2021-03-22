@@ -11,7 +11,7 @@
     text-align: center;
     font-family: "monospace", Times, serif;
     display: inline-block;
-    font-size: 30px; /* Set a font size */
+    font-size: 3vw; /* Set a font size */
     cursor: pointer; /* Mouse pointer on hover */
     position: relative;
   }
@@ -79,7 +79,7 @@
       border: none;
       width: 100%;
       text-align: center;
-      font-size: 50px;
+      font-size: 1vw;
   }
 
   .header{
@@ -100,20 +100,11 @@
 
 
 
-/* Top left text */
-.top-left {
-  position: absolute;
-  font-size: 26px;
-  top: 8px;
-  left: 16px;
-}
-
-
 
 /* Centered text */
 .centered {
   position: absolute;
-  font-size: 23px;
+  font-size: 1vw;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -127,7 +118,7 @@
 
 .centered_top {
   position: absolute;
-  font-size: 23px;
+  font-size: 1.5vw;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -30%);
@@ -182,7 +173,7 @@ body {
 {
   background-color:rgba(133, 153, 173, 0.562);
   padding:45px 0 20px;
-  font-size:15px;
+  font-size:2vw;
   line-height:24px;
   color:#737373;
 }
@@ -198,7 +189,7 @@ body {
 .site-footer h6
 {
   color:#fff;
-  font-size:16px;
+  font-size:2vw;
   text-transform:uppercase;
   margin-top:5px;
   letter-spacing:2px
@@ -287,12 +278,12 @@ body {
   text-transform:uppercase;
   color:#96a2b2;
   font-weight:700;
-  font-size:13px
+  font-size:1vw
 }
 .social-icons a{
   background-color:#eceeef;
   color:#818a91;
-  font-size:16px;
+  font-size:16vw;
   display:inline-block;
   line-height:44px;
   width:44px;
@@ -314,7 +305,7 @@ body {
   line-height:34px;
   height:34px;
   width:34px;
-  font-size:14px
+  font-size:14vw
 }
 .social-icons a.facebook:hover
 {
@@ -346,7 +337,7 @@ body {
 .styled-table {
   border-collapse: collapse;
   margin: 25px 0;
-  font-size: 0.9em;
+  font-size: 9vw;
   align: center;
   font-family: sans-serif;
   min-width: 400px;
