@@ -89,7 +89,7 @@
 
 
 
-  /* Container holding the image and the text */
+/* Container holding the image and the text */
 .container {
   position: relative;
   text-align: center;
@@ -128,7 +128,7 @@
   font-size: 23px;
   top: 30%;
   left: 50%;
-  transform: translate(-50%, -40%);
+  transform: translate(-50%, -30%);
   width: 80%;
   margin: 40px auto;
   margin-left:45px;
