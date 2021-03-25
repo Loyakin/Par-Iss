@@ -154,7 +154,7 @@
   overflow:hidden;
 }
 
-@media (min-width:412px) {
+@media screen and (min-width:412px) {
 .centered_top {
   position: absolute;
   font-size: 3vw;
