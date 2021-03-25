@@ -154,23 +154,6 @@
   overflow:hidden;
 }
 
-@media screen and (max-width:600px) {
-.centered_top {
-  position: absolute;
-  font-size: 3vw;
-  top: 30%;
-  left: 50%;
-  transform: translate(-80%, -30%);
-  width: 80%;
-  margin: 40px auto;
-  margin-left:45px;
-  background-color: rgba(224, 178, 178, 0.8);
-  padding: 2%;
-  text-align: left;
-  line-height: 1.5em;
-  overflow:hidden;
-}
-}
 
 
 .centered_top {
