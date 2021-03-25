@@ -142,7 +142,7 @@
 /* Centered text */
 .centered {
   position: absolute;
-  font-size: 1vw;
+  font-size: 1.2vw;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -153,6 +153,28 @@
   line-height: 1.5em;
   overflow:hidden;
 }
+
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) {
+.centered_top {
+  position: absolute;
+  font-size: 3vw;
+  top: 30%;
+  left: 50%;
+  transform: translate(-80%, -30%);
+  width: 80%;
+  margin: 40px auto;
+  margin-left:45px;
+  background-color: rgb(252, 252, 252, 0.8  );
+  padding: 2%;
+  text-align: left;
+  line-height: 1.5em;
+  overflow:hidden;
+}
+}
+
 
 .centered_top {
   position: absolute;
