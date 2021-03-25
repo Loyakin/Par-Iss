@@ -154,10 +154,7 @@
   overflow:hidden;
 }
 
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 2) {
+@media (min-width:480px) {
 .centered_top {
   position: absolute;
   font-size: 3vw;
