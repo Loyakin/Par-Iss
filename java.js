@@ -1,3 +1,6 @@
+
+
+
 function mobilecheck() {
     var x = document.getElementById("menu");
     var menu = document.getElementById("mobile");
@@ -11,7 +14,7 @@ function mobilecheck() {
         x.style.display = "block";
         menu.style.display = "none";
         for (var i = 0; i < x.length; i++) {
-            main[i].style.fontSize="20px";
+            main[i].style.fontSize="1vw";
         }
       }
   };
