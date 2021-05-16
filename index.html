@@ -12,72 +12,42 @@
 
   
   
-  <div class="logo"> 
-    <img src="images/logo.png" alt="logo site" style="width:15%;height:7.5%;">
-  </div>
-  <body onload="mobilecheck();">
-    <script type="text/javascript" src="java.js"></script>
-    <div id="menu">
-      <div class="header">
-        <div class="dropbtn">
-          <a href="index.html">HOME</a>
-        </div>
-        <div class="dropdown">
-          <button class="btn">CIBO  </button>
-          <div class="dropdown-content">
-            <a href="cibo_fuori.html">FUORI</a>
-            <a href="cibo_spesa.html">SPESA</a>
-            <a href="#">A CASA</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">BUROCRAZIA</button>
-          <div class="dropdown-content">
-            <a href="burocrazia_breve.html">SOGGIORNO BREVE</a>
-            <a href="Burocrazia_lungo.html">SOGGIORNO LUNGO</a>
-          </div>
-        </div>
-        <div class="dropbtn">
-          <a href="casa.html">CASA</a>
-        </div>
-        <div class="dropbtn">
-          <a href="lavoro.html">LAVORO</a>
-        </div>
-      </div>
+  <body>
+    <div class="language">
+      Italiano
     </div>
-
-    <div id="mobile">
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">HOME</a>
-        <a href="#">CIBO</a>
-        <a href="#">BUROCRAZIA</a>
-        <a href="#">CASA</a>
-        <a href="#">LAVORO</a>
-      </div>
       
-      <!-- Use any element to open the sidenav -->
-      <div class="header">
-        <div class="dropbtn">
-          <span onclick="openNav()"><img src="list.png" style="width: 5%;"></span>
+    <div class="navbar">
+      <img src="images/logo.png">
+      <a href="#home">HOME</a>
+      <div class="dropdown">
+        <button class="dropbtn">CIBO 
+        </button>
+        <div class="dropdown-content">
+          <a href="#">FUORI</a>
+          <a href="file:///Users/ruggerobonanno/Documents/GitHub/loyakin.github.io/cibo_spesa.html">SPESA</a>
+          <a href="#">A CASA</a>
         </div>
       </div>
+      <div class="dropdown">
+        <button class="dropbtn">BUROCRAZIA 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">BREVE</a>
+          <a href="#">LUNGO</a>
+        </div>
+      </div>
+      <a href="#news">CASA</a>
+      <a href="#news">LAVORO</a>
     </div>
   
   
   
     <div class="container">
-      <img src="images/italy_france_background.jpg" alt="immage" style="opacity: 0.5; width: 100%;">
-      <div class="centered_top">
-        <h2 style="text-align: center;">Ciao e benvenuto nel mio sito</h2>
-        <p>Qui troverai tutti i consigli per vivere al meglio la tua esperienza in Francia ! 
-        Dai corsi di lingua fino a come trovare i prodotti italiani. <br></p>
-        <p>
-          Ici tu trouveras tous les informations n&eacutecessaires pour mieux profiter de ton experience en France !
-          A partir des courses de langue fran&ccedilaises jusqu'&agrave une liste des sites pour trouver les produits italiens
-          dans les supermach&eacutes.<br>
-        </p>
-      </div>
+      <h2>Ciao e benvenuto nel mio sito</h2>
+      <p>Qui troverai tutti i consigli per vivere al meglio la tua esperienza in Francia ! 
+      Dai corsi di lingua fino a come trovare i prodotti italiani. <br></p>
     </div>
     
 
@@ -86,7 +56,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-6">
             <h6>About</h6>
-            <p class="text-justify">Rugbion &eacute; un'iniziativa privata e spontanea che non mira in alcun modo a sostituire altre pagine gi&agrave; esistenti <br> 
+            <p>Rugbion &eacute; un'iniziativa privata e spontanea che non mira in alcun modo a sostituire altre pagine gi&agrave; esistenti <br> 
             Lo scopo resta quello di aiutare per quanto possibile tutti coloro che si ritrovano a dover fare un'esperienza di breve o lunga durata in Francia <br>
             L'autore di questo sito ha sperimentato in prima persona le diffiolt&agrave; che ci si pu&ograve; aspettare da questo tipo di esperienze e spera che 
             questo sito possa aiutare in tal senso <br>
@@ -104,15 +74,7 @@
             </ul>
           </div>
 
-          <div class="col-xs-6 col-md-3">
-            <h6>Link rapidi</h6>
-            <ul class="footer-links">
-              <li><a href="http://scanfcode.com/about/">About Me</a></li>
-              <li><a href="http://scanfcode.com/contact/">Contact Me</a></li>
-              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-              <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-            </ul>
-          </div>
+          
         </div>
         <hr>
       </div>
