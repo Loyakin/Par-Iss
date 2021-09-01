@@ -51,28 +51,46 @@ function mobilecheck() {
     var casa = document.getElementById("Casa");
     var fuori = document.getElementById("Fuori");
     var online = document.getElementById("Online");
+    var Gastronomia = document.getElementById("Gastronomia");
   
     casa.style.display = "inline";
     fuori.style.display = "none";
     online.style.display = "none";
+    Gastronomia.style.display = "none";
   }
 
   function showFuori() {
     var casa = document.getElementById("Casa");
     var fuori = document.getElementById("Fuori");
     var online = document.getElementById("Online");
+    var Gastronomia = document.getElementById("Gastronomia");
   
     casa.style.display = "none";
     fuori.style.display = "inline";
     online.style.display = "none";
+    Gastronomia.style.display = "none";
   }
 
   function showOnline() {
     var casa = document.getElementById("Casa");
     var fuori = document.getElementById("Fuori");
     var online = document.getElementById("Online");
+    var Gastronomia = document.getElementById("Gastronomia");
   
     casa.style.display = "none";
     fuori.style.display = "none";
     online.style.display = "inline";
+    Gastronomia.style.display = "none";
+  }
+
+  function showGastronomia() {
+    var casa = document.getElementById("Casa");
+    var fuori = document.getElementById("Fuori");
+    var online = document.getElementById("Online");
+    var Gastronomia = document.getElementById("Gastronomia");
+  
+    casa.style.display = "none";
+    fuori.style.display = "none";
+    online.style.display = "none";
+    Gastronomia.style.display = "inline";
   }
