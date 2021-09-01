@@ -1,116 +1,85 @@
-<!doctype html>
-<html>
-  <meta http-equiv='cache-control' content='no-cache'> 
-  <meta http-equiv='expires' content='0'> 
-  <meta http-equiv='pragma' content='no-cache'>
+<html lang="en">
   <head>
-    <title>RugBon - CIBO</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Par-Iss</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/my_style.css">
   </head>
-  
-
-  
-  
-  <body>
-    <div class="language">
-      <a href="#home">FR</a>
-    </div>
-      
-    <div class="navbar">
-      <img src="images/logo.png">
-      <a href="#home">HOME</a>
-      <div class="dropdown">
-        <button class="dropbtn">CIBO 
-        </button>
-        <div class="dropdown-content">
-          <a href="#">FUORI</a>
-          <a href="file:///Users/ruggerobonanno/Documents/GitHub/loyakin.github.io/cibo_spesa.html">SPESA</a>
-          <a href="#">A CASA</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">BUROCRAZIA 
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#">BREVE</a>
-          <a href="#">LUNGO</a>
-        </div>
-      </div>
-      <a href="#news">CASA</a>
-      <a href="#news">LAVORO</a>
-    </div>
-  
-  
-  
-    <div class="containerb">
-      <h2>Ciao e benvenuto nel mio sito</h2>
-      <p>Qui troverai tutti i consigli per vivere al meglio la tua esperienza in Francia! 
-      Dai corsi di lingua fino a come trovare i prodotti italiani. <br></p>
-    </div>
-    
-    <div class="line">
-      <div class="unit size1of2">
-        <h3>1/2</h3>
-        <p>Lorem ipsum dolor sit amet...</p>
-      </div>
-      <div class="unit size1of2 lastUnit">
-        <h3>1/2</h3>
-        <p>Lorem ipsum dolor sit amet...</p>
-      </div>
-    </div>
-    
-    
-
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <h6>About</h6>
-            <p>Rugbion &eacute; un'iniziativa privata e spontanea che non mira in alcun modo a sostituire altre pagine gi&agrave; esistenti <br> 
-            Lo scopo resta quello di aiutare per quanto possibile tutti coloro che si ritrovano a dover fare un'esperienza di breve o lunga durata in Francia <br>
-            L'autore di questo sito ha sperimentato in prima persona le diffiolt&agrave; che ci si pu&ograve; aspettare da questo tipo di esperienze e spera che 
-            questo sito possa aiutare in tal senso <br>
-          </p>
-          </div>
-
-          <div class="col-xs-6 col-md-3">
-            <h6>Categorie</h6>
-            <ul class="footer-links">
-              <li><a href="http://scanfcode.com/category/c-language/">Home</a></li>
-              <li><a href="http://scanfcode.com/category/front-end-development/">Cibo</a></li>
-              <li><a href="http://scanfcode.com/category/back-end-development/">Burocrazia</a></li>
-              <li><a href="http://scanfcode.com/category/java-programming-language/">Casa</a></li>
-              <li><a href="http://scanfcode.com/category/android/">Lavoro</a></li>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark rounded">
+    <div class="container"> 
+        <div class="collapse navbar-collapse  dual-collapse2" id="main-nav-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="cibo.html">Cibo</a></li>
+                <li class="nav-item"><a class="nav-link" href="casa.html">Casa</a></li>
+                <li class="nav-item"><a class="nav-link" href="lavoro.html">Lavoro</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
             </ul>
-          </div>
-
-          
         </div>
-        <hr>
+    </div>
+  </nav>
+  <div class="container, text" style="background-color: whitesmoke;">
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="display-3"> Benvenuto a Par-Iss</h1> 
+          <p>Qui troverai tutto cio di cui avrai bisogno per il tuo viaggio in Francia<br>
+            Dal lavoro, al cibo, alla casa, alla burocrazia. Tutti gli ostacoli che <br>
+            ho potuto trovare durante la mia esperienza con la soluzione a portata di mano, <br>
+            in questo caso, di click! </p>
+        
+          <a class="nav-link" href="#submenu">
+            <button type="button" class="btn btn-primary" aria-label="Left Align">
+              <i class="material-icons" style="color: white; font-size: 40px;">expand_more</i>
+            </button> 
+          </a>
+        </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
-         <a href="#">Scanfcode</a>.
+    </div>
+  </div>
+  <div class=".container-fluid">
+    <div class="row">
+     <div class="col">
+      <img src="images/home_background.jpg" alt="Italian Trulli" style="width:100%">
+    </div> 
+  </div>
+  <div class="container, sub_menu" id="submenu">
+    <div class="row">
+        <a class = "shadow-sm p-3 mb-5 bg-white rounded col-sm-6 col-md-4" id="menu" href="cibo.html">
+          <div class="p-4 mb-4" id="menu">
+            <h3>Cibo</h3> 
+            <img src="images/food.png" alt="Italian Trulli" style="height:325px ; width:auto; object-fit: cover;">  
+            <p style="text-align: justify;">In questa sezione parleremo della gastronomia francese oltre a come trovare quella italina.
+              Che sia nei ristoranti o a casa propria facendosi spedire i prodotti che pi&uacute; vi mancano.
             </p>
           </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
-              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-            </ul>
+        </a>
+        <a class = "shadow-sm p-3 mb-5 bg-white rounded col-sm-6 col-md-4" id="menu" href="casa.html">
+          <div class="p-4 mb-4" id="menu">
+            <h3>Casa</h3> <br>
+            <img src="images/house.png" alt="Italian Trulli" style="height:300px ; width:auto; object-fit: cover;">
+            <p style="text-align: justify;">In funzione della citt&aacute; in cui farai la tua esperienza potresti avere delle difficolt&aacute;
+            a trovare casa. Qui troverai tutti i trucchi per renderti la ricerca più facile.</p>
           </div>
-        </div>
-      </div>
-   </footer>
+        </a>
+        <a class = "shadow-sm p-3 mb-5 bg-white rounded col-sm-6 col-md-4" id="menu" href="lavoro.html">
+          <div class="p-4 mb-4" id="menu">
+            <h3>Lavoro</h3> <br>
+            <img src="images/work.png" alt="Italian Trulli" style="height:300px ; width:auto; object-fit: cover;">
+            <p style="text-align: justify;">Se sei venuto in francia non per una borsa di studio, se hai o avrai presto un contratto di lavoro,
+            in questa sezione parliamo di tutto ci&ograve; che &eacute; importante sapere per lavorare in Francia.</p>
+          </div>
+        </a>
+    </div>
+  </div>
+
   
 
-    
-  </body>
+
+  
+</body>
 </html>

@@ -27,3 +27,52 @@ function mobilecheck() {
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
+
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+    var btnText2 = document.getElementById("myBtn2");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.style.display = "inline"; 
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.style.display = "none"; 
+      moreText.style.display = "inline";
+    }
+  }
+
+
+  function showCasa() {
+    var casa = document.getElementById("Casa");
+    var fuori = document.getElementById("Fuori");
+    var online = document.getElementById("Online");
+  
+    casa.style.display = "inline";
+    fuori.style.display = "none";
+    online.style.display = "none";
+  }
+
+  function showFuori() {
+    var casa = document.getElementById("Casa");
+    var fuori = document.getElementById("Fuori");
+    var online = document.getElementById("Online");
+  
+    casa.style.display = "none";
+    fuori.style.display = "inline";
+    online.style.display = "none";
+  }
+
+  function showOnline() {
+    var casa = document.getElementById("Casa");
+    var fuori = document.getElementById("Fuori");
+    var online = document.getElementById("Online");
+  
+    casa.style.display = "none";
+    fuori.style.display = "none";
+    online.style.display = "inline";
+  }
