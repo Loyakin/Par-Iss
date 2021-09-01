@@ -54,14 +54,8 @@ body {
     font-size: 16px;
   }
 
-footer {
-    text-align : center;
-    background-color : #212121;
-    color: #FFFFFF;
-    position: relative;
-    clear:both;
-    margin-top: 0px;
-    height: 50px;
-    width: 100%;
+.idx_menu:hover{
+    display: block;
+    background: #eee;
 }
 
