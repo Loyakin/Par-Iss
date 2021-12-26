@@ -94,3 +94,18 @@ function mobilecheck() {
     online.style.display = "none";
     Gastronomia.style.display = "inline";
   }
+
+  function default_page() {
+    var casa = document.getElementById("Casa");
+    var fuori = document.getElementById("Fuori");
+    var online = document.getElementById("Online");
+    var Gastronomia = document.getElementById("Gastronomia");
+  
+    casa.style.display = "none";
+    fuori.style.display = "none";
+    online.style.display = "none";
+    Gastronomia.style.display = "inline";
+  } 
+
+
+

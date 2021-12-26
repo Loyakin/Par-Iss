@@ -13,7 +13,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 
   </head>
-<body>
+<body onload="default_page()">
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark rounded">
     <div class="container"> 
         <div class="collapse navbar-collapse  dual-collapse2" id="main-nav-collapse">
@@ -35,14 +35,13 @@
         </div>
         <div class="col-lg-6 col-md-12">
           <h1 class="display-3">Cibo!</h1>
-          <p>Paese che vai, usanza che trovi. Una delle tematiche pi&uacute; care a molti (a me in primis) &eacute; la tradizione culinaria.
-            Questa, in Italia, ha un ruolo che va al di l&aacute; del semplice soddisfare un bisogno, ma si intreccia alla
-            tradizione e ai valori dell'accoglienza e dell'affetto. <br><br>
+          <p><i>Paese che vai, usanza che trovi</i>. Una delle tematiche pi&uacute; care a molti (a me in primis) &eacute; la tradizione culinaria.
+            Questa, in Italia, ha un ruolo che va al di l&aacute; del semplice soddisfare un bisogno intrecciandosi alla tradizione e a valori come quelli dell'accoglienza e dell'affetto. <br><br>
           </p>
-          <h2> La Francia </h2>
-          <p>  La Francia, tra i vari paesi Europei, &eacute; senza dubbio uno di quelli con la tradizioni culinaria pi&uacute; sviluppata.
-            Quest'ultima vanta origini antiche, risalenti al medioevo. Qui, ogni regione pu&ograve; vantarsi di una o pi&uacute; specialit&aacute; locali influenzate 
-            dagli ingredienti disponibili ai tempi nelle vicinanze. Scoprine di pi&uacute; nelle sezioni qui sotto !
+          <h2> In Francia </h2>
+          <p>  La Francia, tra i vari paesi Europei, &eacute; probabilmente uno di quelli con la tradizione culinaria pi&ugrave; sviluppata.
+          Quest'ultima vanta origini antiche, risalenti al medioevo. Qui, ogni regione pu&ograve; vantarsi di una o pi&uacute; specialit&agrave; locali, che fanno uso sapiente 
+          degli ingredienti disponibili nelle vicinanze. Scoprine di pi&uacute; nelle sezioni qui sotto !
             
         </div>
         <a class="nav-link" href="#content" style="text-align: center; margin-top: 10pt;">
@@ -58,9 +57,659 @@
     </div>
   </div>
   </div>
-  <main role="main">
-
   
+  
+  
+  <!-- popup images-->
+  <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Plateaux fruits de mer</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/fruit-mar.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cotriade</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/cotriade.jpg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Galettes</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/galette.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Crepes</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/crepes.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Andouille</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/andouille.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Kig ha farz</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/kighafarz.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Kouign-amann</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/kouighamam.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Moules de buchot</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/moulesbouchot.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Marmitte Dieppoise</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/dieppoise.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Tripe à la mode de Caen</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/tripecaen.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Caneton a la rouennaise</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/caneton.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Tarte Normande</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/tartenormande.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Larems de Jeanne d'Arc</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/larmesjeandarc.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Camembert</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/camembert.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Fiadone</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/fiadone.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal16" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Migliacciole</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/migliacciole.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal17" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Aziminu</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/aziminu.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal18" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Bouillabaisse</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/bouillabasse.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal19" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Baccal&acute;</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/baccala.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal20" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Figatelli</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/figatelli.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal21" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Lonzu</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/lonzu.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal22" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Nicci</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/nicci.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal23" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Pulenda</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/pulenda.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal24" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Bouillabaisse</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/bouillabasse.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal25" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Rouille</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/rouille.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal26" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Soupe au pistou</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/pistou.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal27" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Artichauts à la barigoule</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/artichautbarigoule.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal28" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Pied et paquets</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/piedpaquets.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal29" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Tropezienne</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/tropezienne.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal30" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Bouchon</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/bouchon.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal31" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Salade Lyonnaise</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/saladelyonnaise.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal32" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Gateau foies 
+            de volaille</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/gateaufoiedevolaille.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal33" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Quenelles de brochet</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/quenellesdebrochet.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal34" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Gratin de cardons</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/gratincardons.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal35" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Pommes Dauphine</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/pommesdauphines.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal36" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Coussins de Lyon</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/coussinslyon.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal37" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Boeuf bourguignon</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/boeufborgignon.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal38" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Oeuf Meurette</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/oeufmeurette.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal39" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Coq au vin</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/coqauvin.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal40" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Escargots à la Bourguignonne</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/escargot.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal41" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Pochouse</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/pochouse.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal42" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Kyr</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/kyr.jpg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modal43" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Gougeres</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/gougeres.jpeg" alt="Carta Bretagna" style="height: 350px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    
+
     <nav class="navbar navbar-expand-sm rounded" style="background-color: #eee;">
       <div class="container"> 
           <div class="collapse navbar-collapse  dual-collapse2" id="main-nav-collapse">
@@ -85,16 +734,32 @@
         <h2 style="text-align: center;"> Cucine Regionali</h2> 
         <div class="shadow p-3 mb-5 bg-white rounded row"> 
           <div class="col-lg-6 col-md-12"  style="text-align: justify; margin-top: 10pt;"> 
-              <h4>La Bretagne</h4> &eacute; una regione costiera e per questo motivo vi si
-              possono gustare diversi piatti di origine ittica. Tra questi, vi sono i <mark>Plateux  des fruits de mer</mark>, dei piatti ricolmi di 
-              frutti di mare crudi o cotti in maniera semplice, la zuppa <mark>Cotriade</mark>, fatta di pesci e di crostacei e servita 
-              con patate e baguette tostata. Altri piatti conosciuti, anche se non di origine ittica sono le famose <mark>Galettes</mark>, preparate 
-              con grano saraceno e ripieni salati e le <mark>Cr&ecirc;pes</mark> che conosciamo anche in italia, che sono generalemente mangiate come dessert. 
+              <h4>La Bretagne</h4> &eacute; 
+              &eacute; una regione costiera, per questo motivo molti dei suoi piatti contengono prodotti  ittici. Tra questi piatti, vi sono i 
+                <button type="button"  data-toggle="modal" data-target="#Modal1">
+                  <mark>Plateaux de fruits de mer</mark>
+                </button>
+              , dei piatti ricolmi di 
+              frutti di mare crudi o cotti in maniera semplice e la zuppa <button type="button"  data-toggle="modal" data-target="#Modal2">
+                <mark>Cotriade</mark>
+              </button>, fatta di pesci e di crostacei e servita 
+              con patate e baguette tostata. Altri piatti conosciuti, anche se non di origine ittica sono le famose <button type="button"  data-toggle="modal" data-target="#Modal3">
+                <mark>Galettes</mark>
+              </button> , preparate 
+              con grano saraceno e ripieni salati e le <button type="button"  data-toggle="modal" data-target="#Modal4">
+                <mark>Cr&ecirc;pes</mark>
+              </button>  che conosciamo anche in italia, che sono generalemente mangiate come dessert. 
               Oltre a questi, anche i piatti di carne seguono la ricchezza delle 
-              preparazioni: l’<mark>Andouille</mark> è una salsiccia di maiale affumicata sul legno di faggio che si può mangiare sia calda che fredda 
-              insieme con una fetta di pane spalmata con burro salato; il <mark>Kig ha farz</mark> invece è uno sformato di carne suina cucinato con 
+              preparazioni: l’<button type="button"  data-toggle="modal" data-target="#Modal5">
+                <mark>Andouille</mark>
+              </button>  è una salsiccia di maiale affumicata sul legno di faggio che si può mangiare sia calda che fredda 
+              insieme con una fetta di pane spalmata con burro salato; il <button type="button"  data-toggle="modal" data-target="#Modal6">
+                <mark>Kig ha farz</mark>
+              </button>  invece è uno sformato di carne suina cucinato con 
               verdure e accompagnato da gnocchetti di grano saraceno. Il dolce simbolo della Bretagna è forse di derivazione norvegese 
-              ed è arrivato in Francia attraverso il porto di Duarnenez. Il <mark>Kouign-amann</mark> è una brioche di pasta sfoglia fatta di farina, 
+              ed è arrivato in Francia attraverso il porto di Duarnenez. Il <button type="button"  data-toggle="modal" data-target="#Modal7">
+                <mark>Kouign-amann</mark>
+              </button>  è una brioche di pasta sfoglia fatta di farina, 
               burro e zucchero.
           </div>
           <div class="col-lg-6 col-md-12">
@@ -107,29 +772,60 @@
             <img src="images/Normandie.png" alt="Carta Normandie" class="img-fluid mx-auto d-block; height: 350px;">   
           </div>
           <div class="col-md-6" style="height: 350px;">
-            <h4>La Normandie</h4> anch'essa regione costiera, &eacute; una regione produttrice delle <mark>Moules de buchot</mark>, le cozze che sono fatte 
+            <h4>La Normandie</h4> anch'essa regione costiera, &eacute; una regione produttrice delle <button type="button"  data-toggle="modal" data-target="#Modal8">
+              <mark>Moules de buchot</mark>
+            </button> , le cozze che sono fatte 
             crescere su dei pali di legno conficcati per metà nell’acqua. Per gli amanti dei frutti di mare, in inverno, ci si può scaldare con della 
-            <mark>Marmitte Dieppoise</mark>, uno stufato di pesce cotto nella terracotta, con gamberi, cozze, pesce di rete e funghi. 
-            Per gli amanti della carne, invece, non mancano le alternative: un piatto di <mark>Tripe à la mode de Caen</mark>, realizzata con 
-            i quattro stomaci del bovino, sidro secco, piedino di bue, carote, porri, aglio, burro, spezie e calvados o la <mark>Caneton a la rouennaise</mark>, 
+            <button type="button"  data-toggle="modal" data-target="#Modal9">
+              <mark>Marmitte Dieppoise</mark>
+            </button> , uno stufato di pesce cotto nella terracotta, con gamberi, cozze, pesce di rete e funghi. 
+            Per gli amanti della carne, invece, non mancano le alternative: un piatto di <button type="button"  data-toggle="modal" data-target="#Modal10">
+              <mark>Tripe à la mode de Caen</mark>
+            </button> , realizzata con 
+            i quattro stomaci del bovino, sidro secco, piedino di bue, carote, porri, aglio, burro, spezie e calvados o la <button type="button"  data-toggle="modal" data-target="#Modal11">
+              <mark>Caneton a la rouennaise</mark>
+            </button>, 
             un’anatra lasciata quasi al sangue accompagnata da una salsa a base di bordeaux e scalogno, uno sformato di sedano e una mela caramellata. 
-            A chiudere con sontuosità un pranzo normanno, la <mark>Tarte Normande </mark> a base di mele, creme fraiche e calvados o <mark>Les larmes de Jeanne d’Arc</mark>  
+            A chiudere con sontuosità un pranzo normanno, la <button type="button"  data-toggle="modal" data-target="#Modal12">
+              <mark>Tarte Normande </mark>
+            </button> a base di mele, creme fraiche e calvados o <button type="button"  data-toggle="modal" data-target="#Modal13">
+              <mark>Les larmes de Jeanne d’Arc</mark>
+            </button>  
             (letteralmente, Lacrime di Giovanna d’Arco), mandorle tostate e glassate con caramello o cioccolato. Notevoli anche i latticini, in 
-            particolare i formaggi come il <mark>Camembert</mark>.
+            particolare i formaggi come il <button type="button"  data-toggle="modal" data-target="#Modal14">
+              <mark>Camembert</mark>
+            </button>.
           </div>
         </div>
         <br>
         <div class="shadow p-3 mb-5 bg-white rounded row"> 
           <div class="col-md-6"  style="text-align: justify; margin-top: 10pt;"> 
               <h4>La Corse</h4> &eacute; una regione che risente della sua prossimit&aacute; con la sardegna, lo si pu&oacute; notare dal nome dei suoi piatti che richiamano
-              il dialetto dell'isola. Piatti come nel <mark>Fiadone</mark> un dolce di Brocciu, un formaggio tipico della zona, uova zucchero e scorza di cedro. Un altro piatto a base di formaggio
-              sono le <mark>Migliacciole</mark>, delle frittelle ripiene di formaggio e cotte su foglie di castagno. Per gli amanti del pesce c'&eacute; l’<mark>Aziminu</mark>,
+              il dialetto dell'isola. Piatti come nel <button type="button"  data-toggle="modal" data-target="#Modal15">
+                <mark>Fiadone</mark>
+              </button> un dolce di Brocciu, un formaggio tipico della zona, uova zucchero e scorza di cedro. Un altro piatto a base di formaggio
+              sono le <button type="button"  data-toggle="modal" data-target="#Modal16">
+                <mark>Migliacciole</mark>
+              </button>, delle frittelle ripiene di formaggio e cotte su foglie di castagno. Per gli amanti del pesce c'&eacute; l’
+                <button type="button"  data-toggle="modal" data-target="#Modal17">
+                  <mark>Aziminu</mark>
+                </button>,
               una <mark>Bouillabaisse</mark> a base di pesci di roccia come gli scorfani, le triglie, le tracine e il regaleco. Gli scambi con i genovesi poi, hanno lasciato vivo
-              l’uso del baccalà e dello stoccafisso come per il <mark>Baccalà incu e cee</mark> e l ‘uva secca, con bietole e uva passa. Per gli amanti della carne invece, in Corsica
+              l’uso del baccalà e dello stoccafisso come per il <button type="button"  data-toggle="modal" data-target="#Modal19">
+                <mark>Baccalà incu e cee</mark>
+              </button> e l ‘uva secca, con bietole e uva passa. Per gli amanti della carne invece, in Corsica
               cresce una specie autoctona di suino: il maiale nustrale che si nutre di ghiande e di castagne ed è quindi forte, nella parte interna e montana dell’isola, per 
-              la produzione di salumi come i <mark>Figatelli</mark> (salsicce), la Coppa, il <mark>Lonzu</mark> (filetto), il prisutto (un prosciutto magro affumicato) e il salame secco.
-              Con la farina di castagne, altro ingrediente principe della cucina corsa, invece si preparano i <mark>Nicci</mark>, gallette cotte nel camino tra due piastre di ferro e la 
-              <mark>pulenda</mark>, per la quale non crediamo serva la traduzione.
+              la produzione di salumi come i <button type="button"  data-toggle="modal" data-target="#Modal20">
+                <mark>Figatelli</mark>
+              </button> (salsicce), la Coppa, il <button type="button"  data-toggle="modal" data-target="#Modal21">
+                <mark>Lonzu</mark>
+              </button> (filetto), il prisutto (un prosciutto magro affumicato) e il salame secco.
+              Con la farina di castagne, altro ingrediente principe della cucina corsa, invece si preparano i <button type="button"  data-toggle="modal" data-target="#Modal22">
+                <mark>Nicci</mark>
+              </button>, gallette cotte nel camino tra due piastre di ferro e la 
+              <button type="button"  data-toggle="modal" data-target="#Modal23">
+                <mark>pulenda</mark>
+              </button>, per la quale non crediamo serva la traduzione.
           </div>
           <div class="col-md-6" style="text-align: center;">
             <img src="images/Corse.png" alt="Carta Corsica" style="height: 350px; ">   
@@ -142,24 +838,48 @@
           </div>
           <div class="col-md-6" style="text-align: justify;">
             <h4>Provence –Alpes Côte d’Azur</h4> la regione costiera al confine con la Liguria, la cui tradizione culinaria è definita cuisine du soleil, la cucina del sole ricca di frutta,
-             ortaggi e colori. Il pesce del Mar Mediterraneo è esaltato nella <mark>Bouillabaisse</mark>, una zuppa di pesci locali, con pomodoro e zafferano, servita in abbondante brodo e 
-             accompagnata con un pane abbrustolito e condito con una maionese piccante, la <mark>Rouille</mark>. Le verdure sono celebrate con la <mark>Soupe au pistou</mark>, un minestrone 
-             ricco insaporito con basilico, aglio e pinoli, con gli <mark>Artichauts à la barigoule</mark>, carciofi violetti farciti con il lardo e cotti nel vino e soprattutto con la 
-             <mark>Provençale complete</mark>, un misto di verdure bollite, uovo sodo e couquillages. La carne è soprattutto quella di pecora che trova nei <mark>Pied et paquets</mark> il 
+             ortaggi e colori. Il pesce del Mar Mediterraneo è esaltato nella <button type="button"  data-toggle="modal" data-target="#Modal24">
+              <mark>Bouillabaisse</mark>
+            </button>, una zuppa di pesci locali, con pomodoro e zafferano, servita in abbondante brodo e 
+             accompagnata con un pane abbrustolito e condito con una maionese piccante, la <button type="button"  data-toggle="modal" data-target="#Modal25">
+              <mark>Rouille</mark>
+            </button>. Le verdure sono celebrate con la <button type="button"  data-toggle="modal" data-target="#Modal26">
+              <mark>Soupe au pistou</mark>
+            </button>, un minestrone 
+             ricco insaporito con basilico, aglio e pinoli, con gli <button type="button"  data-toggle="modal" data-target="#Modal27">
+              <mark>Artichauts à la barigoule</mark>
+            </button>, carciofi violetti farciti con il lardo e cotti nel vino e soprattutto con la 
+             <mark>Provençale complete</mark>, un misto di verdure bollite, uovo sodo e couquillages. La carne è soprattutto quella di pecora che trova nei <button type="button"  data-toggle="modal" data-target="#Modal28">
+              <mark>Pied et paquets</mark>
+            </button> il 
              suo piatto di riferimento, sono piedini di pecora avvolti nella trippa e cucinati con vino e pomodoro. In costa azzurra invece è la pasticceria ad essere di eccellenza con dolci
-             come la tarte <mark>Tropezienne</mark>, una crostata di pan brioche farcita con un mélange di tre creme e granella di zucchero, la ricetta è segreta e depositata.
+             come la tarte <button type="button"  data-toggle="modal" data-target="#Modal29">
+              <mark>Tropezienne</mark>
+            </button>, una crostata di pan brioche farcita con un mélange di tre creme e granella di zucchero, la ricetta è segreta e depositata.
           </div>
         </div>
         <br>
         <div class="shadow p-3 mb-5 bg-white rounded row"> 
           <div class="col-md-6"  style="text-align: justify; margin-top: 10pt;"> 
               <h4>Auvergne Rhône-Alpe</h4> con il capoluogo Lyon che è la seconda città francese, dopo Parigi, per numero di stelle Michelin e ha dato i natali al padre della nouvelle cuisine, 
-              Paul Bocuse. A Lyon si mangia nei <mark>Bouchon</mark>, piccole locande con tavoli vicini e attrezzi da lavoro appesi alle pareti, disseminate per tutta la città. Nei bouchon si 
-              serve la cucina popolare, è possibile trovare la <mark>Salade Lyonnaise</mark>, insalata verde con crostini di pane, pancetta croccante e uovo in camicia, il <mark>Gateau foies 
-              de volaille</mark> ovvero uno sformato di fegatini di pollo con salsa di pomodoro e patate, le <mark>Quenelles de brochet</mark>, cannelloni alla salsa di luccio e il <mark>Gratin 
-              de cardons</mark>, cardi gratinati al forno con midollo, formaggio e un roux di acqua e farina. A Lyon sono nate anche le <mark>Pommes Dauphine</mark>, frittelle composte da un 
+              Paul Bocuse. A Lyon si mangia nei <button type="button"  data-toggle="modal" data-target="#Modal30">
+                <mark>Bouchon</mark>
+              </button>, piccole locande con tavoli vicini e attrezzi da lavoro appesi alle pareti, disseminate per tutta la città. Nei bouchon si 
+              serve la cucina popolare, è possibile trovare la <button type="button"  data-toggle="modal" data-target="#Modal31">
+                <mark>Salade Lyonnaise</mark>
+              </button>, insalata verde con crostini di pane, pancetta croccante e uovo in camicia, il <button type="button"  data-toggle="modal" data-target="#Modal32">
+                <mark>Gateau foies de volaille</mark>
+              </button> ovvero uno sformato di fegatini di pollo con salsa di pomodoro e patate, le <button type="button"  data-toggle="modal" data-target="#Modal33">
+                <mark>Quenelles de brochet</mark>
+              </button>, cannelloni alla salsa di luccio e il <button type="button"  data-toggle="modal" data-target="#Modal34">
+                <mark>Gratin de cardons</mark>
+              </button>, cardi gratinati al forno con midollo, formaggio e un roux di acqua e farina. A Lyon sono nate anche le <button type="button"  data-toggle="modal" data-target="#Modal35">
+                <mark>Pommes Dauphine</mark>
+              </button>, frittelle composte da un 
               mélange di purè di patate e pasta choux che sono fritte e servite bollenti. Passeggiando per la città è facile notare nelle vetrine delle pasticcerie dei piccoli dolcetti azzurri, 
-              sono i <mark>Coussins de Lyon</mark>, letteralmente i cuscini di Lione, bon bon di pasta di mandorle riempiti da una ganache al cioccolato profumata al curacao.
+              sono i <button type="button"  data-toggle="modal" data-target="#Modal36">
+                <mark>Coussins de Lyon</mark>
+              </button>, letteralmente i cuscini di Lione, bon bon di pasta di mandorle riempiti da una ganache al cioccolato profumata al curacao.
           </div>
           <div class="col-md-6">
             <img src="images/Auvregne.png" alt="Carta Corsica" style="height: 350px;">   
@@ -171,14 +891,28 @@
             <img src="images/Bourgogne.png" alt="Carta Normandie" style="height: 350px;">   
           </div>
           <div class="col-md-6" style="text-align: justify;">
-            <h4>la Bourgogne</h4> &eacute; forse la regione più conosciuta per i suoi vini rossi e corposi che sono, giustamente, onnipresenti nelle ricette tradizionali come il <mark>Boeuf bourguignon</mark>
-            , manzo stufato nel <mark>Pinot noir</mark> con verdure e odori, l’<mark>Oeuf Meurette</mark>, un uovo in camicia accompagnato da una salsa di vino rosso, lardelli, scalogno e da una fetta di pane 
-            tostato all’aglio. Da ricordare naturalmente il <mark>Coq au vin</mark> piatto simbolo della regione: un galletto di Bresse (città della regione dove il pollame è nutrito con farina di mais e latte
-            per rendere la carne tenerissima e succosa) fatto marinare e poi cuocere nel vino rosso, con cipolle, carote e funghi. Conosciutissime, le <mark>Escargots à la Bourguignonne</mark>, lumache farcite
+            <h4>la Bourgogne</h4> &eacute; forse la regione più conosciuta per i suoi vini rossi e corposi che sono, giustamente, onnipresenti nelle ricette tradizionali come il <button type="button"  data-toggle="modal" data-target="#Modal37">
+              <mark>Boeuf bourguignon</mark>
+            </button>
+            , manzo stufato nel <mark>Pinot noir</mark> con verdure e odori, l’<button type="button"  data-toggle="modal" data-target="#Modal38">
+              <mark>Oeuf Meurette</mark>
+            </button>, un uovo in camicia accompagnato da una salsa di vino rosso, lardelli, scalogno e da una fetta di pane 
+            tostato all’aglio. Da ricordare naturalmente il <button type="button"  data-toggle="modal" data-target="#Modal39">
+              <mark>Coq au vin</mark>
+            </button> piatto simbolo della regione: un galletto di Bresse (città della regione dove il pollame è nutrito con farina di mais e latte
+            per rendere la carne tenerissima e succosa) fatto marinare e poi cuocere nel vino rosso, con cipolle, carote e funghi. Conosciutissime, le <button type="button"  data-toggle="modal" data-target="#Modal40">
+              <mark>Escargots à la Bourguignonne</mark>
+            </button>, lumache farcite
             con aglio, prezzemolo e limone, cotte al forno con il burro. La storia vuole che fossero un cibo da rimedio, raccolto sotto gli alberi dopo la pioggia dai poveri delle città che non avevano di che 
-            sfamarsi; oggi è considerato un piatto pregiato. La Borgogna non è bagnata dal mare ma attraversata da molti fiumi ricchi di pesci e la <mark>Pochouse</mark>, una sorta di caciucco fatto con pesci 
-            di acqua dolce e vino aspro ricavato dagli acini d’uva acerba, è uno dei pochi piatti ittici della regione. A Dijon inoltre si producono un’eccellente senape e il <mark>Kyr</mark>, una crema di cassis 
-            che si usa bere durante l’aperitivo accompagnata dai <mark>Gougeres</mark>, piccoli choux ripieni di formaggio Gruviere.
+            sfamarsi; oggi è considerato un piatto pregiato. La Borgogna non è bagnata dal mare ma attraversata da molti fiumi ricchi di pesci e la <button type="button"  data-toggle="modal" data-target="#Modal41">
+              <mark>Pochouse</mark>
+            </button>, una sorta di caciucco fatto con pesci 
+            di acqua dolce e vino aspro ricavato dagli acini d’uva acerba, è uno dei pochi piatti ittici della regione. A Dijon inoltre si producono un’eccellente senape e il <button type="button"  data-toggle="modal" data-target="#Modal42">
+              <mark>Kyr</mark>
+            </button>, una crema di cassis 
+            che si usa bere durante l’aperitivo accompagnata dai <button type="button"  data-toggle="modal" data-target="#Modal43">
+              <mark>Gougeres</mark>
+            </button>, piccoli choux ripieni di formaggio Gruviere.
           </div>
         </div>
       </div>
@@ -396,21 +1130,39 @@
         </div>
       </div>
       <div class="container" id="Online">
+        <h2 style="text-align: center;">Online</h2>
         <div class="shadow p-3 mb-5 bg-white rounded row">
           <div class="col-lg-6 col-md-12" style="text-align: center;">
             <img src="images/rider.png  " alt="Rider" style="height: 300px;">   
           </div> 
           <div class="col-lg-6 col-md-12"  style="text-align: justify; margin-top: 10pt;"> 
-               <h4>Online</h4>: <p>La ristorazione a domicilio si &eacute; molto sviluppata con il passare del tempo. Se la citt&agrave; &eacute; abbastanza grande, servizi di consegna a domicilio come <mark>Uber Eats</mark>, <mark>Deliveroo</mark> o <mark>JustEat</mark> saranno presenti. Molti dei ristoranti si registrano su queste applicazioni e consegano poi questi ordini a dei riders che si occuperanno di portarli a casa vostra. <br>
-                Negli ultimi anni, oltre a questi servizi esistono anche altri che spediscono dei piatti pronti per la settimana, una specie di servizio mensa come <mark>Seazon</mark>. Altri, invece, spediscono gli ingredienti pesati con delle guide per cucinare voi stessi i piatti come la francese <mark>Quitoque</mark>.
+               <h4>Asporto</h4>: <p>La ristorazione a domicilio si &eacute; molto sviluppata con il passare del tempo. Se la citt&agrave; &eacute; abbastanza grande, servizi di consegna a domicilio come <mark><a href="https://www.ubereats.com/fr">Uber Eats</a>  </mark>,
+                <mark><a href="https://deliveroo.fr/fr/">Deliveroo</a> </mark> o <mark><a href="https://www.just-eat.fr/en/">JustEat</a></mark> saranno presenti. Molti dei ristoranti si registrano su queste applicazioni e consegano poi questi ordini a dei riders che si occuperanno di portarli a casa vostra. <br>
+                Negli ultimi anni, oltre a questi servizi esistono anche altri che spediscono dei piatti pronti per la settimana, una specie di servizio mensa come <mark><a href="https://seazon.fr/Seazon">Seazon</a></mark>. Altri, invece, spediscono gli ingredienti 
+                pesati con delle guide per cucinare voi stessi i piatti come la francese <mark><a href="https://www.quitoque.fr/">Quitoque</a></mark>.
               </p>     
           </div>
-        
-        
-      </div>
-    </div>
+        </div>
+        <br>
+        <div class="shadow p-3 mb-5 bg-white rounded row"> 
+          <div class="col-lg-6 col-md-12"  style="text-align: justify; margin-top: 10pt;"> 
+               <h4>Cibo Italiano</h4>: <p>Vivere lontano dalla propria terra &eacute; difficile, e una delle prime cose a mancare, dopo i propri cari e i propri affetti per molti (me compreso) &eacute; il cibo. Fortunatamente ci sono oggi molti siti che si offrono di spedire per te tutti la spesa italiana. Tanti prodotti, anche i pi&ugrave; famosi di quelli regionali dovunque tu sia (meglio se in Europa)
+              </p>     
+          </div>
+          <div class="col-lg-6 col-md-12" style="text-align: center;">
+            <img src="images/cibo-it.jpg  " alt="Rider" style="height: 300px;">   
+          </div>
+        </div>
+      </div> 
+      <div id="myModal" class="modal">
 
-  
+        
+      
+      </div> 
+      
+    
+
+ 
 
   
   
@@ -422,5 +1174,3 @@
 </footer>
     
 
-
-  </main>
