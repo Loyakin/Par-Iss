@@ -45,15 +45,19 @@ body {
 /* Fade in */
 
 .sub_menu_cibo {
-    background-color: cornflowerblue; /* Green */
     border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    color: rgb(0, 0, 0);
+    size: 1cm;
   }
+
+.sub_menu_cibo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 2px 8px rgba(0,0,0,.06);
+}
+
+.popupphoto {
+  border: none;
+}
 
 .idx_menu:hover{
     display: block;
@@ -126,15 +130,7 @@ body {
     color: white;
   }
   
-  .container {
-    padding: 0 16px;
-  }
-  
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+ 
   
   .title {
     color: grey;
@@ -173,3 +169,41 @@ body {
     border-right: thick solid yellow;
     padding-right: 5px;
   }
+
+  /* navbar becomes mobile sidebar under lg breakpoint */
+@media (max-width: 992px) {
+    
+  .navbar-collapse.collapsing .navbar-nav {
+      display: block;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: -45%;
+      transition: all 0.2s ease;
+      padding: 15px;
+      background-color: rgba(256,256,256, 1)
+  }
+
+  .navbar-collapse.show .navbar-nav {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      flex-direction: column;
+      height: auto;
+      width: 45%;
+      transition: left 0.35s ease;
+      padding: 5px;
+      padding-top: 15px;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.11);
+      background-color: rgba(256,256,256, 1)
+  }
+}
+
+
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
