@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/my_style.css">
-    <script src="/java.js"></script>
+    <script src="java.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
   </head>
@@ -717,19 +716,22 @@
     </div>
   </div>
   
-  <div class="dropdown show">
-    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Argomento
-    </a>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item"> <button onclick="showGastronomia()" class="sub_menu_cibo" id="myBtn">Cucine Regionali</a>
-      <a class="dropdown-item"> <button onclick="showCasa()" class="sub_menu_cibo" id="myBtn">A casa</a>
-      <a class="dropdown-item"> <button onclick="showFuori()" class="sub_menu_cibo" id="myBtn">Fuori</a>
-        <a class="dropdown-item"> <button onclick="showOnline()" class="sub_menu_cibo" id="myBtn">Online</a>
-    </div>
-  </div>
-  
+    
 
+    <nav class="navbar navbar-expand-sm rounded" style="background-color: #eee;">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item p-1"> <button onclick="showGastronomia()" class="sub_menu_cibo" id="myBtn">Cucine Regionali</button>
+              </li>
+              <li>&nbsp;</li>
+              <li class="nav-item active p-1"> <button onclick="showCasa()" class="sub_menu_cibo" id="myBtn">A casa</button></li>
+              <li>&nbsp;</li>
+              <li class="nav-item p-1"> <button onclick="showFuori()" class="sub_menu_cibo" id="myBtn">Fuori</button>
+              </li>
+              <li>&nbsp;</li>
+              <li class="nav-item p-1"> <button onclick="showOnline()" class="sub_menu_cibo" id="myBtn">Online</button>
+              </li>
+          </ul>
+    </nav>
 
     <div class="container" id="content">
       <div class="container" id="Gastronomia">
