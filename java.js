@@ -1,10 +1,10 @@
-
-
-
 function mobilecheck() {
     var x = document.getElementById("menu");
     var menu = document.getElementById("mobile");
-    var main = document.getElementsByClassName("centered_top");
+    va$('.dropdown-toggle').dropdown();
+$('#divNewNotifications li').on('click', function() {
+    $('#dropdown_title').html($(this).find('a').html());
+    }); main = document.getElementsByClassName("centered_top");
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         x.style.display = "none";
         menu.style.display = "block";

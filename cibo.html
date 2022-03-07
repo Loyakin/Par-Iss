@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="css/my_style.css">
     <script src="/java.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+
+      $(document).ready(function(){
+          $(".dropdown-menu li a").click(function(){
+          $("#options").text($(this).text());
+          });
+      });
+  </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
@@ -717,17 +725,16 @@
     </div>
   </div>
   
-  <div class="dropdown show">
-    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Argomento
-    </a>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item"> <button onclick="showGastronomia()" class="sub_menu_cibo" id="myBtn">Cucine Regionali</a>
-      <a class="dropdown-item"> <button onclick="showCasa()" class="sub_menu_cibo" id="myBtn">A casa</a>
-      <a class="dropdown-item"> <button onclick="showFuori()" class="sub_menu_cibo" id="myBtn">Fuori</a>
-        <a class="dropdown-item"> <button onclick="showOnline()" class="sub_menu_cibo" id="myBtn">Online</a>
-    </div>
-  </div>
+  
+  <li class="dropdown">
+    <button id="options" aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="btn btn-secondary dropdown-toggle" >Argomento<span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item"> <button onclick="showGastronomia()" class="sub_menu_cibo" id="myBtn">Cucine Regionali</a></li>
+            <li><a class="dropdown-item"> <button onclick="showCasa()" class="sub_menu_cibo" id="myBtn">A casa</a></li>
+            <li><a class="dropdown-item"> <button onclick="showFuori()" class="sub_menu_cibo" id="myBtn">Fuori</a></li>
+            <li><a class="dropdown-item"> <button onclick="showOnline()" class="sub_menu_cibo" id="myBtn">Online</a></li>
+        </ul>
+</li>
   
 
 
