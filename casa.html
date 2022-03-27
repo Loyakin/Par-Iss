@@ -15,26 +15,30 @@
   </head>
 
 <body>
+  
   <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-
-    <div class="container">
-       <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-          aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li> <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          </li>
-          <li class="nav-item p-1"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item p-1"><a class="nav-link" href="cibo.html">Cibo</a></li>
-          <li class="nav-item active p-1"><a class="nav-link" href="casa.html">Casa</a></li>
-          <li class="nav-item p-1"><a class="nav-link" href="lavoro.html">Lavoro</a></li>
-          <li class="nav-item p-1"><a class="nav-link" href="Contact.html">Contact</a></li>
-        </ul>
-       </div>
+    <button class="navbar-toggler menu" 
+    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', 
+    this.classList.contains('opened'))" 
+    data-toggle="collapse" 
+      data-target="#navbarSupportedContent" 
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false" a
+      aria-label="Toggle navigation">
+      <svg width="40" height="40" viewBox="0 0 100 100">
+        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+        <path class="line line2" d="M 20,50 H 80" />
+        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+      </svg>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item p-1"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item p-1"><a class="nav-link" href="cibo.html">Cibo</a></li>
+      <li class="nav-item active p-1"><a class="nav-link" href="casa.html">Casa</a></li>
+      <li class="nav-item p-1"><a class="nav-link" href="lavoro.html">Lavoro</a></li>
+      <li class="nav-item p-1"><a class="nav-link" href="Contact.html">Contact</a></li>
+    </ul>
     </div>
   </nav>
   <div class="jumbotron">
@@ -52,48 +56,100 @@
           <h2> La Francia </h2>
           <p>  In funzione della tua situazione, avrai sicuramente un budget diverso, che ti porter&agrave; a cercare delle soluzioni diverse 
             al problema. Per gli studenti e gli stagisti esistono gli allogi studenteschi e le case condivise o gli studi&ograve;. Per i lavoratori 
-            gli appartamenti con 2 o pi&uacute; stanze.
-            
+            gli appartamenti con 2 o pi&uacute; stanze. </p>
         </div>
-        <a class="nav-link" href="#content" style="text-align: center; margin-top: 10pt;">
-          <button type="button" class="btn btn-primary" aria-label="Left Align">
-            <i class="material-icons" style="color: white; font-size: 40px;">expand_more</i>
-          </button> 
-        </a>
       </div>
-      <span id="more">
-        
-        
-      </span>
+      <div class="row">
+        <div class="col-lg-12">
+          <h2> Prima di cominciare </h2>
+            &Egrave; importante conoscere il lessico per capire gli annunci sui differenti siti, per questo ecco una lista delle abbreviazioni pi&ugrave;
+            utilizzate :
+            <ul>
+              <li><b>Studio</b> : una sola stanza con bagno e cucina (non sempre separata quest'ultima)</li>
+              <li><b>T2 ou F2</b> : appartement deux pièces, 2 stanze</li>
+              <li><b>T3 ou F3</b> : appartement trois pièces, 3 stanze</li>
+              <li><b>SdB</b> : salle de bains (avec une baignoire), bagno con vasca</li>
+              <li><b>Salle d’eau</b> : salle de bains (avec une douche), bagno con doccia</li>
+              <li><b>Appt.</b> : appartement, appartamento</li>
+              <li><b>RdC</b> : Rez-de-chaussée, o piano terra</li>
+              <li><b>Asc.</b> : ascenseur, ascensore</li>
+              <li><b>TBE</b> : très bon état, in buono stato</li>
+              <li><b>CC</b> : charges comprises come l'acqua, la luce, il condominio etc.</li>
+            </ul>
+          Oltre al lessico, &egrave; importante sapere che in Francia, la legge tutela molto i diritti dell'affittaurio, rendendo molto difficile ad esempio 
+          liberarsi di un affittuario che non paga. Questo fa si che i proprietari cerchino di tutelarsi con altri modi, richiedendo diversi documenti e 
+          garanzie ai propri affittari prima di firmare il contratto di affitto. <br><br>
+          <p>La procedura &egrave; abbastanza complicata.</p>
+          
+          <p>Per prima cosa bisogna costituire il proprio <i>dossier du locataire</i> che consiste in una serie di documenti che provino al proprietario che siete un 
+            buon affittaurio. I documenti richiesti sono i seguenti : 
+            <ul>
+              <li>Carta d'identit&aacute; o equivalente</b> </li>
+              <li>Documento che giustifichi il vostro domicilio attuale : una bolletta a nome vostro, gas, luce, telefono o un contratto di assicurazione civile. 
+                Se non siete proprietari o affittuari, un attestazione d'onore del proprietario della casa che 
+                affermi come la vostra residenza sia in quella casa baster&agrave;.
+              </li>
+              <li>Se siete gi&agrave; in affitto un documento che attesti come avete pagato le ultime tre mensilit&aacute;</li>
+              <li>Se siete gi&agrave; in Francia e avete pagato le tasse, fornire l'avis de taxe foncière (dichiarazione dei redditi)</li>
+              <li>Un documento che giustifichi il vostro statuto da lavoratore o studente</li>
+              <li>I documenti mostranti gli ultimi tre stipendi se lavoratore e/o altre entrate</li>
+            </ul>
+
+            Qualora il candidato non rispetti alcune delle condizioni necessarie per accedere al bene in affitto, il candidato pu&ograve; avvalersi di uno o pi&ugrave; garanti i/le quali garantiranno
+            il pagamento dell'affitto. Attenzione per&oacute;, i/le garanti devono avere la residenza in Francia, altrimenti non servir&agrave; molto tranne in casi eccezionali come 
+            per gli studenti erasmus. I documenti per il garante sono praticamente gli stessi che per l'affittuario.<br><br>
+
+            Nel caso non si disponga di garante, esistono certi organismi che forniscono la garanzia a pagamento, qualora questo fosse necessario.
+
+          </p>
+
+      </div>   
+      </div>
     </div>
   </div>
 
   <main role="main">
-
     <div class="container" id="content">
       <div class="container" id="Studente">
         <h2 style="text-align: center;"> Le soluzioni</h2> 
         <div class="shadow p-3 mb-5 bg-white rounded row"> 
           <div class="col-lg-6 col-md-12"  style="text-align: justify; margin-top: 10pt;"> 
               <h4>Alloggi studenteschi per borsisti, i CROUS</h4> <br> Se sei uno studente, un dottorando e a volte anche per gli stagisti, puoi fare domanda a una delle tante
-              residenze per studenti. Per&ograve, per accedere a queste strutture, dovrai essere vincitore di una borsa di studio, cosa che non tutti sono. Per fare domanda basta 
-              cercare su google CROUS dossier social etudiant e troverete subito la pagina. Questo dossier, vi permetter&agrave; di ottenere la borsa di studio e l'accesso a queste 
-              strutture. Solitamente, sar&agrave; la vostra universit&agrave; a dirigervi verso la loro CROUS nel caso in cui ne avete il diritto. Ma non esitate a chiderglielo!          
+              residenze per studenti. Ne esistono di due tipi : 
+              <ul>
+                <li>Le Cité U : sono generalement tra i 9 e i 12 metri quadri, delle piccole stanze con un bagno, una scrivania e un letto dentro il campus universitario o in prossimit&agrave;
+                </li>
+                <li>I CROUS : sono un po pi&uacute; grandi, si arriva fino al T2 e possono essere situati in diversi posti della citt&aacute;</li>
+              </ul>
+              In ogni caso, per accedere a queste strutture, dovrai essere vincitore di una borsa di studio. Per depositare la domanda per un certo periodo bisogna deporla almeno 3 mesi prima
+               (tempo massimo per il trattamento) presso il loro sito. La domanda consiste nella compilazione del DSE dossier social etudiant, infatti baster&agrave; cercare DSE CROUS per trovare 
+               subito il sito nel quale depositare compilare la domanda. Questo dossier, vi permetter&agrave; di ottenere la borsa di studio e l'accesso a queste 
+              strutture. Solitamente, sar&agrave; la vostra universit&agrave; a dirigervi verso la loro CROUS nel caso in cui ne avete il diritto. In ongi caso, se questo tipo di sistemazione 
+              vi sta bene, non esitate a chiderglielo!          
           </div>
           <div class="col-lg-6 col-md-12">
-            <img src="images/bretagne.png" alt="Carta Bretagna" class="img-fluid mx-auto d-block;">   
+            <img src="images/crous.png" alt="Carta Bretagna" class="img-fluid mx-auto d-block;">   
           </div>
         </div>
         <br>
         <div class="shadow p-3 mb-5 bg-white rounded row"> 
           <div class="col-lg-6 col-md-12">
-            <img src="images/bretagne.png" alt="Carta Bretagna" class="img-fluid mx-auto d-block;">   
+            <img src="images/colocation.png" alt="Carta Bretagna" class="img-fluid mx-auto d-block;">   
           </div>
           <div class="col-lg-6 col-md-12"  style="text-align: justify; margin-top: 10pt;"> 
-              <h4>Gli appartamenti condivisi</h4> <br> Queste sono soluzioni valide un po' per tutti, che tu sia uno studente o uno stagista, se hai un budget limitato, una camera in un 
-              appartamento potrebbe essere la soluzione che fa per te. Come trovarla? Per prima cosa ti consiglio di vedere su facebook, ci sono spesso dei gruppi dove vengono pubblicate
-              questo genere di informazioni. Per trovarli basta usare le parole chiavi "louer", "chambre" e "colocation" o "coloc" con il nome della città in cui starete. <br>
-              Un altro posto dove trovarne dei siti specializzati, cercate "louer chambre ville" per sapere quali siti sono attivi nella vostra citt&agrave;.     
+              <h4>Gli appartamenti condivisi</h4> <br> Queste sono soluzioni valide un po' per tutti, che tu sia uno studente o uno stagista, soprattutto se hai un budget limitato, o se sei 
+              in cerca di compagnia. In questi casi, una camera in un appartamento potrebbe essere la soluzione che fa per te. Come trovarla? Per prima cosa ti consiglio di vedere su facebook, 
+              ci sono spesso dei gruppi dove vengono pubblicate questo genere di informazioni. Per trovarli basta usare le parole chiavi "louer", "chambre" e "colocation" o "coloc" con il nome 
+              della città in cui starete. <br>
+              Un altro posto dove trovarne dei siti specializzati, cercate "louer chambre ville" per sapere quali siti sono attivi nella vostra citt&agrave;.  
+              Eccone una lista dei pi&ugrave; conosciuti in francia : 
+              <ul>
+                <li><a href="www.appartager.com/">A partager</a> </li>
+                <li><a href="https://www.lacartedescolocs.fr/">La carte des colocs</a></li>
+                <li><a href="https://www.leboncoin.fr/colocations/">Le bon coin</a></li>
+                <li><a href="https://www.locservice.fr/colocation/">Loc service</a></li>
+                <li><a href="https://whoomies.com/">Whoomies</a></li>
+              </ul>   
           </div>
         </div>
         <div class="shadow p-3 mb-5 bg-white rounded row"> 
@@ -104,7 +160,7 @@
               il prezzo &eacute; tropppo basso rispetto alla media, probabilmente si trattta di una truffa!    
           </div>
           <div class="col-lg-6 col-md-12">
-            <img src="images/bretagne.png" alt="Carta Bretagna" class="img-fluid mx-auto d-block;">   
+            <img src="images/studio.jpeg" alt="Carta Bretagna" class="img-fluid mx-auto d-block;">   
           </div>
         </div>
       </div>
