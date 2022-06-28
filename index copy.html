@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Par-Iss</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/my_style copy.css">
+    <script src="java.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+  <div id="header"><div class="textheader">Prima volta in Francia ?</div></div>
+
+  <section>
+  <div class="jumbotron">
+    <div class="container, text" >
+      <div class="row">
+        <div class="col-md-12" style="text-align: center;">
+          <h1 class="display-3"> Benvenuto a Par-Iss</h1> 
+          <p>Qui troverai tutto cio di cui avrai bisogno per il tuo viaggio in Francia:<br>
+            dal lavoro, al cibo, alla casa, alla burocrazia. Tutti gli ostacoli che <br>
+            ho dovuto affontare durante la mia esperienza con la soluzione a portata di mano, <br>
+            in questo caso, di click! </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=".container-fluid">
+    <div class="row">
+     <div class="col">
+      <img src="images/home_background.jpg" alt="Italian Trulli" style="width:100%">
+    </div> 
+  </div>
+  </section>
+  <script type="text/javascript">
+    const bg = document.getElementById('header');
+    window.addEventListener('scroll', function(){
+     bg.style.position =  
+     bg.style.backgroundSize = 100 - +window.pageYOffset/12 +'%'
+     bg.style.opacity = 100 - +window.pageYOffset/7 +'%';
+
+    })
+
+  </script>
+ 
+</body>
+</html>

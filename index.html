@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/my_style.css">
     <script src="java.js"></script>
+    <script src="scroll.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
@@ -17,40 +18,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
 
   <body>
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler menu" 
-    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', 
-    this.classList.contains('opened'))" 
-    data-toggle="collapse" 
-      data-target="#navbarSupportedContent" 
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false" a
-      aria-label="Toggle navigation">
-      <svg width="40" height="40" viewBox="0 0 100 100">
-        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-        <path class="line line2" d="M 20,50 H 80" />
-        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-      </svg>
-    </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active p-1"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item p-1"><a class="nav-link" href="cibo.html">Cibo</a></li>
-          <li class="nav-item p-1"><a class="nav-link" href="casa.html">Casa</a></li>
-          <li class="nav-item p-1"><a class="nav-link" href="lavoro.html">Lavoro</a></li>
-          <li class="nav-item p-1"><a class="nav-link" href="Contact.html">Contact</a></li>
-        </ul>
-      </div>
-  </nav>
-
-
-
-
   
-  <div class="jumbotron">
+
+  <div id="header"><div class="textheader">Prima volta in Francia ?</div></div>
+
+  <div id="nav-position"></div>
+  <script>
+    $(function(){
+      $("#nav-position").load("./nav.html");
+    });
+  </script>
+
+  <div class="jumbotron" id="jumbo">
     <div class="container, text" >
       <div class="row">
         <div class="col-md-12" style="text-align: center;">
@@ -63,25 +46,35 @@
       </div>
     </div>
   </div>
-  <div class=".container-fluid">
-    <div class="row">
-     <div class="col">
-      <img src="images/home_background.jpg" alt="Italian Trulli" style="width:100%">
-    </div> 
-  </div>
 
-  <div class="jumbotron" style="background-color:rgb(135, 165, 220)">
-    <div class="col-md-4" >
-          <h1 class="display-3" style="font-family: 'Bebas Neue', cursive;"> Cibo</h1> 
-          <div class="vertical-left">
-            <p style="font-family: 'Playfair Display', serif;">Come, dove e cosa mangiare?<br>
-            Mi manca casa, come fare la spesa italiana all'estero?<br>
-            Che cosa offre la cucina francese?</p>
-          </div>
+  <script type="text/javascript">
+    const bg = document.getElementById('header');
+    const bg2 = document.getElementById('jumbo');
+    let rect = bg2.getBoundingClientRect();
+    window.addEventListener('scroll', function(){
+     bg.style.backgroundSize = 100 - Math.max((+window.pageYOffset-100),0)/12 +'%'
+     bg.style.opacity = 100 - +window.pageYOffset/7 +'%';
+    })
+  </script>
+  
+  <section class="scroll-container">
+    <div class="scroll-element js-scroll slide-right">
+      ciao
     </div>
-  </div>
+  </section>
 
-  <div class="jumbotron" style="background-color:rgb(135, 217, 220)">
+    <div class="jumbotron"  style="background-color:rgb(135, 165, 220)">
+      <div class="col-md-4" >
+            <h1 class="display-3" style="font-family: 'Bebas Neue', cursive;"> Cibo</h1> 
+            <div class="vertical-left">
+              <p style="font-family: 'Playfair Display', serif;">Come, dove e cosa mangiare?<br>
+              Mi manca casa, come fare la spesa italiana all'estero?<br>
+              Che cosa offre la cucina francese?</p>
+            </div>
+      </div>
+    </div>
+
+  <div class="jumbotron position-relative" style="background-color:rgb(135, 217, 220)">
     <div class="col-md-4 ms-auto text-end" >
           <h1 class="display-3" style="font-family: 'Bebas Neue', cursive;"> Casa</h1> 
           <div class="vertical-right">

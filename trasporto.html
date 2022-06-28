@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Par-Iss</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/my_style.css">
+    <script src="java.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+<body onload="default_page()">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler menu" 
+    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', 
+    this.classList.contains('opened'))" 
+    data-toggle="collapse" 
+      data-target="#navbarSupportedContent" 
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false" a
+      aria-label="Toggle navigation">
+      <svg width="40" height="40" viewBox="0 0 100 100">
+        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+        <path class="line line2" d="M 20,50 H 80" />
+        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+      </svg>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active p-1"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item p-1"><a class="nav-link" href="cibo.html">Cibo</a></li>
+          <li class="nav-item p-1"><a class="nav-link" href="casa.html">Casa</a></li>
+          <li class="nav-item p-1"><a class="nav-link" href="lavoro.html">Lavoro</a></li>
+          <li class="nav-item p-1"><a class="nav-link" href="trasporto.html">Trasporto</a></li>
+          <li class="nav-item p-1"><a class="nav-link" href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+  </nav>
+
+  <div class="jumbotron">
+    <div class="container" style="padding: 2%;">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <img src="images/food.png" alt="Italian Trulli" class="img-fluid fit-image">   
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <h1 class="display-3">Trasporto!</h1>
+          <p>Metro, bus, treni, bikesharing o monopattini elettrici...o forse una macchina o un motorino?</p>
+          <h2> In Francia </h2>
+          <p>  La Francia, nel corso del tempo, ha sempre investito parecchio nel trasporto. Molte citt&agrave; dispongono di 
+            diverse soluzioni di trasporto efficaci che permettono di spostarso agilmente.<br>
+            Una di queste &egrave; la metro, qui chiamata <i>le m&eacute;tro</i> molte citt&agrave; ne dispongono. Ma non &egrave; 
+            la sola soluzione, ci sono anche i bus (abbastanza puntuali) e altre soluzioni di trasporto come bikesharing e monopattini.
+            O, se magari abiti un po' fuori e te lo puoi permettere, puoi sempre acquistare una macchina!          
+        </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="container" id="content">
+      <h2 style="text-align: center;"> In citt&agrave;</h2> 
+      <div class="shadow p-3 mb-5 bg-white rounded row"> 
+        <div class="col-lg-6 col-md-12"  style="text-align: justify; margin-top: 10pt;"> 
+            <h4>La metro, Bus, ...</h4>. Se la citt&agrave; &egrave; abbastanza grande, avr&agrave; porbabilmente una metro. 
+            Per potervi accedere, bisogner&agrave; comprare il ticket o, per i clienti pi&ugrave; assidui un pass 
+            una carta simile alla carta di credito con un numero illimitati di accessi su un periodo di tempo. <br>
+            A seconda della categoria sociale in cui rientri, ci saranno diverse offerte: una 
+            meno cara per gli studenti e stagisti o altre categorie meno agiate e una per gli altri. Ci saranno anche 
+            diverse offerte in base alla frequenza alla quale utilizzerai la metro, o alle zone (per le grandi citt&grave;) : biglietto singolo, 
+            pacchetto di biglietti, pass settimanale, mensile o annuale. <br> 
+            I trasporti sono gestiti di solito da una compangia, che cambia da citt&grave; a citt&agrave;. A parigi si chiama RATP, a Rennes 
+            si chiama Star e cos&igrave; via. Le offerte, come i prezzi, possono variare in base alla citt&agrave; ma seguono le linee guide elencate sopra. <br>
+            Per ottenere un pass bisogner&agrave; solitamente dimostrare di abitare nella citt&agrave;: una fattura a vostro nome
+            baster&agrave;. <br>
+            Nel caso la metro non ci fosse, tutte le citt&agrave; dispongono di un servizio di autobus. In francia sono abbastanza puntuali.
+            Solitamente meno di 5 minuti di ritardo, di tanto in tanto 10. Il servizio bus di solito &egrave; gestito dalla stessa
+            compagnia della metro e il biglietto o pass di solito &egrave; unico e valido per tutti i mezzi.
+            Alcune citt&agrave; potrebbero avere altri mezzi di trasporto, come il tram, questo di solito sostituisce la metro nelle zone in cui 
+            per un motivo o per un altro, la costruzione della metro non era possibile o non era conveniente. Anche in questo caso, di solito il 
+            biglietto preso per il bus o per la metro sar&grave; valido anche per il tram. 
+        </div>
+        <div class="col-lg-6 col-md-12 my-auto">
+          <img src="images/bretagne.png" alt="Carta Bretagna" class="img-fluid mx-auto d-block;">   
+        </div>
+      </div>
+      <br>
+      <div class="shadow p-3 mb-5 bg-white rounded row"> 
+        <div class="col-lg-6 col-md-12 my-auto">
+          <img src="images/bretagne.png" alt="Carta Bretagna" class="img-fluid mx-auto d-block;">   
+        </div>
+        <div class="col-lg-6 col-md-12"  style="text-align: justify; margin-top: 10pt;"> 
+            <h4>Bikesharing, carsharing, monopattini, scooter, ...</h4>. &Egrave; cominciato poco a poco, timidamente, nelle grandi citt&agrave; qualche anno fa. Ora
+            quasi tutte le citt&agrave; dispongono di una soluzione di <i>trasporto dolce</i>, ovvero che non comporti l'uso della benzina o similari. <br>
+            Tra questi servizi, il pi&ugrave; comune &egrave; il bikesharing, che consiste in delle bici, elettriche o meno, messe dal comune a disposizione 
+            in affitto in delle stazioni dedicate e che &egrave; possibile affittare, pagando un prezzo generalemente basso (qualche euro al massimo).<br>
+            A questo, si sono aggiunti servizi di noleggio di vari altri mezzi di trasporto : i monopattini (<i>trotinette</i> in francese), gli scooter, le macchine etc.
+            In questo caso non &egrave; il comune a offrire il servizio, ma compagnie private. Tra queste la conosciutissima <i>Uber</i> per le bici, o <i>Lime</i>, <i>Bird</i> per i 
+            monopattini. Queste soluzioni sono di solito pi&ugrave; care, ma la qualit&agrave; &egrave; spesso migliore.  
+        </div>
+        
+      </div>
+      
+    </div>
+    <div class="container" id="content">
+      <h2 style="text-align: center;"> Fuori citt&agrave;</h2> 
+      <div class="shadow p-3 mb-5 bg-white rounded row"> 
+        <div class="col-lg-6 col-md-12"  style="text-align: justify; margin-top: 10pt;"> 
+            <h4>I treni, i bus intercitt&agrave;</h4>. 
+        </div>
+        <div class="col-lg-6 col-md-12 my-auto">
+          <img src="images/bretagne.png" alt="Carta Bretagna" class="img-fluid mx-auto d-block;">   
+        </div>
+      </div>    
+      
+  </div> 
+      
+    
+
+ 
+
+  
+  
+  
+
+
+<footer>
+  <small>&copy; 2014 Name. All rights reserved.</small>
+</footer>
+    
+
