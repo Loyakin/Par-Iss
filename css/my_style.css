@@ -252,9 +252,10 @@ html {
 .textheader{
   color: #111; 
   font-family: 'Open Sans Condensed', sans-serif; 
-  font-size: 50px; 
+  font-size: 4.5vw;; 
   font-weight: 700; 
   line-height: 64px; 
+  line-height: 6vw;
   margin: 0 0 0; 
   padding: 20px 20px; 
   text-align: center; 
@@ -294,14 +295,6 @@ html {
   
   .scrolled.fade-in {
     animation: fade-in 1s ease-in-out both;
-  }
-  
-  .scrolled.fade-in-bottom {
-    animation: fade-in-bottom 1s ease-in-out both;
-  }
-  
-  .scrolled.slide-left {
-    animation: slide-in-left 1s ease-in-out both;
   }
   
   .scrolled.slide-right {

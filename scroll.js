@@ -1,10 +1,10 @@
-const scrollElements = document.querySelector(".js-scroll");
+const scrollElements = document.getElementsByClassName("js-scroll");
 
 const elementInView = (el, dividend = 1) => {
   const elementTop = el.getBoundingClientRect().top;
 
   return (
-    elementTop >
+    (elementTop-10) <=
     (window.innerHeight) / dividend
   );
 };
@@ -26,14 +26,13 @@ const hideScrollElement = (element) => {
 };
 
 const handleScrollAnimation = () => {
-    const el = document.querySelector(".js-scroll")
-    
-    if (elementInView(el, 1.25)) {
-      displayScrollElement(el);
-    } else if (elementOutofView(el)) {
-      hideScrollElement(el)
-    }
-  
+  for(var i = 0; i < scrollElements.length; i++) 
+  {
+    if (elementInView(scrollElements[i], 1.25)) 
+      {displayScrollElement(scrollElements[i]);} 
+    else if (elementOutofView(scrollElements[i])) 
+      {hideScrollElement(scrollElements[i])}
+  }
 }
 
 window.addEventListener("scroll", () => { 
