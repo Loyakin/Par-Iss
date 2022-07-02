@@ -1,3 +1,4 @@
+var navbar = `
 <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
     <button class="navbar-toggler menu" 
     onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', 
@@ -23,4 +24,6 @@
           <li class="nav-item p-1"><a class="nav-link" href="Contact.html">Contact</a></li>
         </ul>
       </div>
-  </nav>
+  </nav>`
+
+  document.body.insertAdjacentHTML("afterbegin", navbar);
