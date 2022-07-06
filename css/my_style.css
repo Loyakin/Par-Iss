@@ -164,25 +164,27 @@ html {
     
   .navbar-collapse.collapsing .navbar-nav {
       display: block;
+      overflow-x:hidden;
       position: fixed;
       top: 1.75cm;
       bottom: 0;
       left: -45%;
       transition: all 0.2s ease;
-      padding: 15px;
+      padding: 5px;
       background-color: rgba(256,256,256, 1)
   }
 
   .navbar-collapse.show .navbar-nav {
       position: fixed;
+      overflow-x:hidden;
       top: 1.75cm;
       bottom: 0;
       left: 0;
       flex-direction: column;
       height: auto;
-      width: 45%;
+      width: 30%;
       transition: left 0.35s ease;
-      padding: 5px;
+      padding: 3px;
       padding-top: 15px;
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.11);
       background-color: rgba(256,256,256, 1)
@@ -190,13 +192,16 @@ html {
 }
 
 
-.second_nav {
-  position : sticky;
+.navigation--inline ul {
+  display: flex;
 }
 
-.scrolled.slide-left {
-  animation: slide-in-left 1s ease-in-out both;
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
@@ -325,7 +330,7 @@ html {
   }
 
   .top {
-    --offset: 50px; 
+    --offset: 20px; 
   
     position: sticky;
     bottom: 20px;      
