@@ -18,6 +18,10 @@ html {
   box-sizing: border-box;
 }
 
+.nav-link .dropdown-toggle {
+  padding: 0px; 
+}
+
 .text {
     margin: 10px 0px 10px 0px ;
     text-align: center;
@@ -322,4 +326,10 @@ html {
     font-weight: bold;
   }
 
-  
+  .intext {
+    margin: 15px 0;}
+  figure {
+      margin: 0 15px 15px 0;
+      }
+  figcaption {font-size:small; color: white; background:black; padding:5px;}
+      
